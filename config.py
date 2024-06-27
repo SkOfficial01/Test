@@ -13,5 +13,5 @@ MONGO_URL = getenv("MONGO_URL", None)
 OWNER_ID = getenv("OWNER_ID", "6407024039")
 SUPPORT_GRP = "officialbigdaddy07"
 UPDATE_CHNL = "officialbigdaddy07"
-OWNER_USERNAME = "devil_rajput_01"
+OWNER_USERNAME = "ll_SANKI_XD"
 
