@@ -1,14 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from DAXXMUSIC import app
-from DAXXMUSIC.misc import SUDOERS
-from DAXXMUSIC.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from DAXXMUSIC.utils.decorators.language import language
+from nexichat import nexichat
+from nexichat.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from nexichat.utils.decorators.language import language
 from config import BANNED_USERS
 
 
-@app.on_message(filters.command(["blchat", "blacklistchat"]) & SUDOERS)
+@app.on_message(filters.command(["blchat", "blacklistchat"])
 @language
 async def blacklist_chat_func(client, message: Message, _):
     if len(message.command) != 2:
@@ -28,7 +27,7 @@ async def blacklist_chat_func(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(["whitelistchat", "unblacklistchat", "unblchat"]) & SUDOERS
+    filters.command(["whitelistchat", "unblacklistchat", "unblchat"])
 )
 @language
 async def white_funciton(client, message: Message, _):
