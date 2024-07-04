@@ -15,3 +15,9 @@ SUPPORT_GRP = "officialbigdaddy07"
 UPDATE_CHNL = "officialbigdaddy07"
 OWNER_USERNAME = "ll_SANKI_XD"
 
+BANNED_USERS = filters.user()
+adminlist = {}
+lyrical = {}
+votemode = {}
+autoclean = []
+confirmer = {}
