@@ -4,7 +4,6 @@ from pyrogram.types import Message
 from nexichat import nexichat
 from nexichat.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
 from nexichat.utils.decorators.language import language
-from config import BANNED_USERS
 
 
 @app.on_message(filters.command(["blchat", "blacklistchat"])
